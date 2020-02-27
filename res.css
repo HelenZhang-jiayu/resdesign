@@ -1,0 +1,158 @@
+
+*{
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+}
+body{
+    background-color: black;
+}
+h1{
+    color:white;
+    font-size:160px;
+    position: absolute;
+    top:8vh; left:2vw;
+}
+h2{
+    color:white;
+    font-size: 160px;
+    position: absolute;
+    top:30vh;
+    left:2vw;
+}
+h3{
+    color:white;
+    font-size: 220px;
+    position: absolute;
+    top:70vh;
+    left:55vw;
+}
+.p{
+    z-index:10;
+    width:25vw;
+    color:white;
+    font-size: 18px;
+    position: absolute;
+    top:40vh;
+    left:55vw;
+}
+.sq{
+    
+  width: 0; 
+  height: 0; 
+  border-left: 120px solid black;
+  border-right: 120px solid black;
+  border-bottom: 150px solid transparent;
+  animation: 
+      color 5s ease infinite alternate, 
+      move 10s linear infinite alternate;
+  }
+  
+  @keyframes color {
+    0%, 100% {
+      background-color: red;
+    }
+    50% {
+      background-color: orange;
+    }
+    100%{
+        background-color: blue;
+    }
+  }
+  
+  @keyframes move {
+    0%, 100% {
+      transform: translate(50vw, 8vh);
+    }
+    
+    30% {
+      transform: translate(80vw, 8vh);
+    }
+    60%{
+        transform: translate(80vw,50vh);
+    }
+    80% {
+      transform: translate(6vw, 50vh);
+    }
+    100%{
+        transform: translate(6vw,80vh);
+    }
+  }
+
+
+  @media screen and (max-width: 600px){
+    h1{
+        font-size:100px;
+    }
+    h2{
+        font-size:100px;
+    }
+    h3{
+        font-size:100px;
+    }
+    .h1{
+        
+        position: absolute;
+        transform: rotate(-90deg);
+        margin-left: -7vw;
+        margin-top:30vw;
+
+    }
+   .h2{
+    transform: rotate(-90deg);
+        position: absolute;
+        margin-left: -18vw;
+        margin-top:-10vw;
+    }
+   h3{
+        color:white;
+        position: absolute;
+        top:80vh;
+        left:55vw;
+    }
+    .p{
+        z-index:10;
+        width:40vw;
+        color:white;
+        font-size: 16px;
+        position: absolute;
+        top:48vh;
+        left:56vw;
+    }
+    .sq{
+        border-left: 60px solid black;
+  border-right: 60px solid black;
+  border-bottom: 100px solid transparent;
+  animation: 
+      color 5s ease infinite alternate, 
+      move 8s linear infinite alternate;
+    }
+    @keyframes move {
+        0% {
+          transform: translate(20vw, 4vh);
+        }
+        
+        30% {
+          transform: translate(75vw, 4vh);
+        }
+        60%{
+            transform: translate(75vw,40vh);
+        }
+        80% {
+          transform: translate(6vw, 40vh);
+        }
+        100%{
+            transform: translate(6vw,4vh);
+        }
+      }
+      @keyframes color {
+        0%, 100% {
+          background-color: green;
+        }
+        50% {
+          background-color: orange;
+        }
+        100%{
+            background-color: blue;
+        }
+      }
+}
