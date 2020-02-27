@@ -27,6 +27,7 @@ h3{
     left:55vw;
 }
 .p{
+    display:none;
     z-index:10;
     width:25vw;
     color:white;
@@ -35,8 +36,7 @@ h3{
     top:40vh;
     left:55vw;
 }
-.sq{
-    
+.sq{ 
   width: 0; 
   height: 0; 
   border-left: 120px solid black;
@@ -110,12 +110,13 @@ h3{
         left:55vw;
     }
     .p{
+        display:block;
         z-index:10;
         width:40vw;
         color:white;
         font-size: 16px;
         position: absolute;
-        top:48vh;
+        top:45vh;
         left:56vw;
     }
     .sq{
