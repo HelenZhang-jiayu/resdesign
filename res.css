@@ -36,6 +36,9 @@ h3{
     top:40vh;
     left:55vw;
 }
+.p2{
+  display:none;
+}
 .sq{ 
   width: 0; 
   height: 0; 
@@ -77,9 +80,33 @@ h3{
         transform: translate(6vw,80vh);
     }
   }
-
-
+@media screen and (max-width: 900px){
+h3{
+  top:80vh;
+  left:55vw;
+  font-size: 130px;
+}
+h1{
+  font-size: 130px;
+}
+h2{
+  font-size: 130px;
+}
+  .p2{
+  display:block;
+  z-index:10;
+  width:30vw;
+  color:white;
+  font-size: 18px;
+  position: absolute;
+  top:38vh;
+  left:60vw;
+}
+}
   @media screen and (max-width: 600px){
+    .p2{
+      display:none;
+    }
     h1{
         font-size:100px;
     }
