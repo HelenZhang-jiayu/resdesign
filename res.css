@@ -7,12 +7,14 @@ body{
     background-color: black;
 }
 h1{
+    display:none;
     color:white;
     font-size:160px;
     position: absolute;
     top:8vh; left:2vw;
 }
 h2{
+    display:none;
     color:white;
     font-size: 160px;
     position: absolute;
@@ -49,7 +51,33 @@ h3{
       color 5s ease infinite alternate, 
       move 10s linear infinite alternate;
   }
-  
+#sm{
+  display:none;
+}
+.sm1{
+    width: 60px; 
+    height: 60px; 
+    border-radius: 100%;
+    animation:
+    color 3s ease infinite alternate,
+    move2 5s infinite alternate; 
+  }
+.sm2{
+  width: 60px; 
+  height: 60px; 
+  border-radius: 100%;
+animation: 
+    color 3s ease infinite alternate,
+    move3 5s infinite alternate;
+}
+  .sm3{
+    width: 60px; 
+    height: 60px; 
+    border-radius: 100%;
+  animation: 
+      color 3s ease infinite alternate,
+      move4 5s infinite alternate;
+  }
   @keyframes color {
     0%, 100% {
       background-color: red;
@@ -61,12 +89,25 @@ h3{
         background-color: blue;
     }
   }
-  
+  @keyframes move2{
+    0%       { transform: translatex(30vw) translatey(2vh) }
+
+    100%     { transform: translatex(10vw) translatey(45vh) }
+  }
+  @keyframes move3{
+    0%       { transform: translatex(10vw) translatey(40vh) }
+
+    100%     { transform: translatex(20vw) translatey(5vh) }
+  }
+  @keyframes move4{
+    0%       { transform: translatex(5vw) translatey(20vh) }
+   
+    100%     { transform: translatex(30vw) translatey(10vh) }
+  }
   @keyframes move {
     0%, 100% {
       transform: translate(50vw, 8vh);
     }
-    
     30% {
       transform: translate(80vw, 8vh);
     }
@@ -80,6 +121,16 @@ h3{
         transform: translate(6vw,80vh);
     }
   }
+  @media screen and (max-width: 1050px){
+    h1{
+      display:block;
+      color:white;
+    font-size:160px;
+    position: absolute;
+    top:8vh; left:2vw;
+    }
+   
+  }
 @media screen and (max-width: 950px){
 h3{
   top:80vh;
@@ -87,10 +138,12 @@ h3{
   font-size: 130px;
 }
 h1{
-  font-size: 130px;
+  display:block;
+  font-size: 160px;
 }
 h2{
-  font-size: 130px;
+  display:block;
+  font-size: 160px;
 }
   .p2{
   display:block;
