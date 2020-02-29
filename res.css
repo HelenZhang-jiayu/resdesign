@@ -169,6 +169,9 @@ h2{
     #sm{
       display:block;
     }
+    p{
+      display: none;
+    }
     .p2{
       display:none;
     }
