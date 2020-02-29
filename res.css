@@ -144,7 +144,10 @@ animation:
    
   }
 @media screen and (max-width: 950px){
-p{
+#sm{
+  display:block;
+}
+  p{
   display:none;
 }
   h3{
