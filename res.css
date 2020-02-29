@@ -131,6 +131,9 @@ animation:
     }
   }
   @media screen and (max-width: 1050px){
+    p{
+      display: none;
+    }
     h1{
       display:block;
       color:white;
@@ -141,7 +144,10 @@ animation:
    
   }
 @media screen and (max-width: 950px){
-h3{
+p{
+  display:none;
+}
+  h3{
   top:80vh;
   left:55vw;
   font-size: 130px;
